@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".auth.RegistrationFragment">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:animationResolution="10828"
+        android:progress="70"
+        android:visibility="gone" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/REmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Email ID"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="@+id/RLibraryCode"
+            app:layout_constraintStart_toStartOf="@+id/RLibraryCode"
+            app:layout_constraintTop_toBottomOf="@+id/RLibraryCode" />
+
+        <LinearLayout
+            android:id="@+id/LL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/REmail"
+            app:layout_constraintStart_toStartOf="@+id/REmail"
+            app:layout_constraintTop_toBottomOf="@+id/REmail">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/CcodePicker"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                app:ccp_contentColor="@color/black"
+                app:ccp_showNameCode="false"
+                app:ccp_showPhoneCode="false">
+
+            </com.hbb20.CountryCodePicker>
+
+            <EditText
+                android:id="@+id/RMobileNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+
+                android:hint="Mobile No(10 Digit)"
+                android:inputType="phone"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/RPin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="PIN(6 Digit)"
+            android:inputType="numberPassword"
+            app:layout_constraintEnd_toEndOf="@+id/LL"
+            app:layout_constraintStart_toStartOf="@+id/LL"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/LL"
+            app:layout_constraintStart_toStartOf="@+id/LL"
+            app:layout_constraintTop_toBottomOf="@+id/LL">
+
+            <Button
+                android:id="@+id/Selectimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:ems="10"
+                android:text="Select logo"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_account">
+
+            </ImageView>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Update"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="Register"
+            app:layout_constraintEnd_toEndOf="@+id/RPin"
+            app:layout_constraintStart_toStartOf="@+id/RPin"
+            app:layout_constraintTop_toBottomOf="@+id/RPin" />
+
+        <EditText
+            android:id="@+id/RLibraryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ellipsize="middle"
+            android:ems="10"
+            android:hint="Library Name"
+            android:inputType="textPersonName"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/RLibraryCode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Library ID(6 Digit)"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/RLibraryName"
+            app:layout_constraintStart_toStartOf="@+id/RLibraryName"
+            app:layout_constraintTop_toBottomOf="@+id/RLibraryName" />
+
+        <TextView
+            android:id="@+id/RAlready"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Already Registered?Log In Now!"
+            android:textColor="#2196F3"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/Update"
+            app:layout_constraintTop_toBottomOf="@+id/Update" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

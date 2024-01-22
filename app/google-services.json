@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "264828150629",
+    "project_id": "library-2be14",
+    "storage_bucket": "library-2be14.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264828150629:android:63cfd07773a56e5572378c",
+        "android_client_info": {
+          "package_name": "com.vip.v_library"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByqnZKDo_n9ZBLIvaPo3XKdPQB84KQPKg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

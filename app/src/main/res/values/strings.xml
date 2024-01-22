@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">V-Library</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="textview">TextView</string>
+    <string name="dept">Dept:</string>
+    <string name="vaibhav_pawar">Vaibhav Pawar</string>
+    <string-array name="classs">
+        <item>Select</item>
+        <item>FY 1st SEM</item>
+        <item>FY 2nd SEM</item>
+        <item>SY 3rd SEM</item>
+        <item>SY 4th SEM</item>
+        <item>TY 5th SEM</item>
+        <item>TY 6th SEM</item>
+    </string-array>
+
+    <string-array name="dept">
+        <item>Select</item>
+        <item>COMPUTER</item>
+        <item>INFORMATION TECHNOLOGY</item>
+        <item>MECHANICAL</item>
+        <item>CIVIL</item>
+        <item>ELECTRICAL</item>
+        <item>AUTOMOBILE</item>
+        <item>ELECTRONICS</item>
+    </string-array>
+
+    <string-array name="purshingyears">
+        <item>Select</item>
+        <item>2018-19</item>
+        <item>2019-20</item>
+        <item>2020-21</item>
+        <item>2021-22</item>
+        <item>2022-23</item>
+        <item>2023-24</item>
+        <item>2024-25</item>
+        <item>2025-26</item>
+        <item>2026-27</item>
+        <item>2027-28</item>
+        <item>2028-29</item>
+        <item>2029-30</item>
+        <item>2030-31</item>
+        <item>2031-32</item>
+        <item>2032-33</item>
+        <item>2033-34</item>
+        <item>2034-35</item>
+        <item>2035-36</item>
+        <item>2036-37</item>
+        <item>2037-38</item>
+        <item>2038-39</item>
+        <item>2039-40</item>
+        <item>2040-41</item>
+        <item>2041-42</item>
+        <item>2042-43</item>
+        <item>2043-44</item>
+        <item>2044-45</item>
+        <item>2045-46</item>
+        <item>2046-47</item>
+        <item>2047-48</item>
+        <item>2048-49</item>
+        <item>2049-50</item>
+    </string-array>
+
+    <string name="aboutus">
+        The app is usefull to us help every one to manage a library.
+        it make easy work for librarian to borrow and retrive the
+        books.Enjot Using Virtual Library And let us know your feedback to
+        improve the app.
+    </string>
+</resources>
